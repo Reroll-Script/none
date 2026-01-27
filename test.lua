@@ -1,7 +1,9 @@
 
 
 function run(taskspawn)    
-    task.spawn(taskspawn)
+    pcall(function()
+        loadstring(taskspawn)
+    end)
 end
 
         -- // System old \\ --
